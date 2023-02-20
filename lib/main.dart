@@ -20,8 +20,20 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+      ),
       appBar: AppBar(
         title: const Text('Flutter App'),
+        actions: [
+          IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.add,
+                color: Colors.white,
+              ))
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
